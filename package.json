@@ -12,24 +12,25 @@
 	"repositories": [
 		{
 			"type": "git",
-			"url": "https://github.com/cujojs/quickstart"
+			"url": "git://github.com/deciob/cujojs-upops"
 		}
 	],
 	"maintainers": [
 		{
-			"name": "Brian Cavalier",
-			"web": "http://hovercraftstudios.com"
-		},
-		{
-			"name": "John Hann",
-			"web": "http://unscriptable.com"
+			"name": "Decio Battaglia"
 		}
 	],
 	"dependencies": {},
 	"devDependencies": {
-		"jitter": "",
 		"serv": "",
-		"bower": ""
+		"bower": "",
+		"grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-coffee": "~0.7",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-coffeelint": "0.0.6",
+    "grunt-contrib-compass": ""
 	},
 	"scripts": {
 		"postinstall": "bower install",
