@@ -14,7 +14,7 @@ module.exports = (grunt) ->
         expand: true
         cwd: 'coffee'
         src: '**/*.coffee'
-        dest: 'src'
+        dest: 'app'
         ext: '.js'
 
     compass:

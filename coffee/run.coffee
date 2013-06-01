@@ -66,7 +66,7 @@
       location: "app/welcome"
     ,
       name: "theme"
-      location: "theme"
+      location: "theme/css"
       config:
         moduleLoader: "curl/plugin/css"
     ,
