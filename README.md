@@ -11,8 +11,12 @@ This is a starter kit for building [cujoJS](http://cujojs.com) apps in CoffeeScr
 1. `npm install`
 1. `npm start`
 1. Open http://localhost:8000/ in your browser
-1. `jitter coffee app -b`
 1. Open your editor and start coding
+
+In new shell, to compile CoffeeScript:
+
+1. `node_modules/jitter/bin/jitter coffee app -b`
+
 
 ## Using the built-in server with another port
 
