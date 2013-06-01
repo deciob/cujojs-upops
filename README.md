@@ -1,6 +1,6 @@
-# cujoJS seed
+# cujoJS coffee seed
 
-CoffeeScript version of [seed](https://github.com/cujojs/seed).
+CoffeeScript version of [cujoJS seed](https://github.com/cujojs/seed).
 
 This is a starter kit for building [cujoJS](http://cujojs.com) apps in CoffeeScript.
 
