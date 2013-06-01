@@ -1,0 +1,2 @@
+cujojs-coffee-seed
+==================
