@@ -5,22 +5,54 @@ define
   theme:
     module: "theme/basic.css"
 
-  
+
+  root: 
+    $ref: 'dom!upops'
+  top:
+    $ref: "dom!top"
+  centre:
+    $ref: "dom!centre"
+
+
   # Create a simple view by rendering html, replacing some i18n strings
   # and loading CSS.  Then, insert into the DOM
-  message:
+  title:
     render:
       template:
-        module: "text!welcome/template.html"
-
-      replace:
-        module: "i18n!welcome/strings"
-
-      css:
-        module: "css!welcome/structure.css"
-
+        module: "text!title/template.html"
+      #replace:
+      #  module: "i18n!title/strings"
+      #css:
+      #  module: "css!title/structure.css"
     insert:
-      at: "dom.first!body"
+      first: 'top'
+
+  selector:
+    render:
+      template:
+        module: "text!selector/template.html"
+      #replace:
+      #  module: "i18n!selector/strings"
+    insert:
+      last: 'top'
+
+  chart:
+    render:
+      template:
+        module: "text!chart/template.html"
+      replace:
+        module: "i18n!chart/strings"
+    insert:
+      first: 'centre'
+
+  map:
+    render:
+      template:
+        module: "text!map/template.html"
+      #replace:
+      #  module: "i18n!map/strings"
+    insert:
+      last: 'centre'
 
   
   # Wire.js plugins
