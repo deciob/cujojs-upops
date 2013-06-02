@@ -1,21 +1,56 @@
-/* line 9, ../sass/basic.sass */
-html {
+/* line 2, ../sass/basic.sass */
+body, html {
   font-size: 100%;
   text-size-adjust: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: lighter;
   color: #222222;
   transition: opacity 1s ease;
+  width: 100%;
+  height: 99%;
 }
 
-/* line 45, ../sass/basic.sass */
+/* line 13, ../sass/basic.sass */
 h1, h2, h3 {
-  color: #333333;
+  color: #555555;
+  text-align: center;
 }
 
-/* line 48, ../sass/basic.sass */
+/* line 17, ../sass/basic.sass */
 h1 {
   font-weight: bold;
   font-size: 3em;
   letter-spacing: -0.1ex;
+  align: center;
+}
+
+/* line 23, ../sass/basic.sass */
+#upops {
+  height: 100%;
+  padding: 0.4em;
+}
+
+/* line 27, ../sass/basic.sass */
+#top {
+  height: 20%;
+}
+
+/* line 30, ../sass/basic.sass */
+#centre {
+  height: 50%;
+}
+
+/* line 33, ../sass/basic.sass */
+#bottom {
+  height: 25%;
+}
+
+/* line 36, ../sass/basic.sass */
+#footer {
+  height: 5%;
+}
+
+/* line 39, ../sass/basic.sass */
+.container {
+  border: 1px solid black;
 }

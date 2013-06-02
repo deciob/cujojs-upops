@@ -1,4 +1,7 @@
 define
+
+  normTheme:
+    module: "theme/normalize.css"
   
   # Load a basic theme. This is just a CSS file, and since a moduleLoader is
   # configured in run.js, curl knows to load this as CSS.
@@ -12,6 +15,8 @@ define
     $ref: "dom!top"
   centre:
     $ref: "dom!centre"
+  bottom:
+    $ref: "dom!bottom"
 
 
   # Create a simple view by rendering html, replacing some i18n strings
@@ -20,21 +25,12 @@ define
     render:
       template:
         module: "text!title/template.html"
-      #replace:
-      #  module: "i18n!title/strings"
+      replace:
+        module: "i18n!title/strings"
       #css:
       #  module: "css!title/structure.css"
     insert:
       first: 'top'
-
-  selector:
-    render:
-      template:
-        module: "text!selector/template.html"
-      #replace:
-      #  module: "i18n!selector/strings"
-    insert:
-      last: 'top'
 
   chart:
     render:
@@ -45,14 +41,14 @@ define
     insert:
       first: 'centre'
 
-  map:
+  selector:
     render:
       template:
-        module: "text!map/template.html"
-      #replace:
-      #  module: "i18n!map/strings"
+        module: "text!selector/template.html"
+      replace:
+        module: "i18n!selector/strings"
     insert:
-      last: 'centre'
+      first: 'bottom'
 
   
   # Wire.js plugins

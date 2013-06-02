@@ -1,1 +1,3 @@
-
+define({
+  text: "selector"
+});

@@ -38,14 +38,11 @@
         name: "title",
         location: "app/title"
       }, {
-        name: "selector",
-        location: "app/selector"
-      }, {
         name: "chart",
         location: "app/chart"
       }, {
-        name: "map",
-        location: "app/map"
+        name: "selector",
+        location: "app/selector"
       }, {
         name: "theme",
         location: "theme/css",

@@ -1,4 +1,7 @@
 define({
+  normTheme: {
+    module: "theme/normalize.css"
+  },
   theme: {
     module: "theme/basic.css"
   },
@@ -11,24 +14,20 @@ define({
   centre: {
     $ref: "dom!centre"
   },
+  bottom: {
+    $ref: "dom!bottom"
+  },
   title: {
     render: {
       template: {
         module: "text!title/template.html"
+      },
+      replace: {
+        module: "i18n!title/strings"
       }
     },
     insert: {
       first: 'top'
-    }
-  },
-  selector: {
-    render: {
-      template: {
-        module: "text!selector/template.html"
-      }
-    },
-    insert: {
-      last: 'top'
     }
   },
   chart: {
@@ -44,14 +43,17 @@ define({
       first: 'centre'
     }
   },
-  map: {
+  selector: {
     render: {
       template: {
-        module: "text!map/template.html"
+        module: "text!selector/template.html"
+      },
+      replace: {
+        module: "i18n!selector/strings"
       }
     },
     insert: {
-      last: 'centre'
+      first: 'bottom'
     }
   },
   plugins: [
