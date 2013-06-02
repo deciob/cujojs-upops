@@ -29,7 +29,7 @@ module.exports = (grunt) ->
       tasks: 'default'
 
     coffeelint:
-      files: ['coffee/**/*.coffee'],
+      files: ['coffee/**/**/*.coffee'],
       options:
         'no_trailing_whitespace': {'level': 'error'},
         'no_empty_param_list': {'level': 'warning'},

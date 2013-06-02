@@ -8,64 +8,6 @@ html {
   transition: opacity 1s ease;
 }
 
-/* line 17, ../sass/basic.sass */
-body {
-  margin: 0;
-  font-size: 1em;
-  line-height: 1.5;
-}
-
-/* line 22, ../sass/basic.sass */
-.page {
-  *zoom: 1;
-  max-width: 59em;
-  _width: 59em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.page:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* line 27, ../sass/basic.sass */
-.page header, .page footer {
-  clear: both;
-}
-/* line 31, ../sass/basic.sass */
-.page nav {
-  width: 23.72881%;
-  float: left;
-  margin-right: 1.69492%;
-  display: inline;
-}
-/* line 33, ../sass/basic.sass */
-.page nav .content {
-  width: 74.57627%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -1em;
-  display: inline;
-}
-/* line 38, ../sass/basic.sass */
-.page nav .content .main {
-  width: 65.90909%;
-  float: left;
-  margin-right: 2.27273%;
-  display: inline;
-}
-/* line 42, ../sass/basic.sass */
-.page nav .content .secondary {
-  width: 31.81818%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -1em;
-  display: inline;
-}
-
 /* line 45, ../sass/basic.sass */
 h1, h2, h3 {
   color: #333333;

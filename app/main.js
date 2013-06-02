@@ -2,20 +2,56 @@ define({
   theme: {
     module: "theme/basic.css"
   },
-  message: {
+  root: {
+    $ref: 'dom!upops'
+  },
+  top: {
+    $ref: "dom!top"
+  },
+  centre: {
+    $ref: "dom!centre"
+  },
+  title: {
     render: {
       template: {
-        module: "text!welcome/template.html"
-      },
-      replace: {
-        module: "i18n!welcome/strings"
-      },
-      css: {
-        module: "css!welcome/structure.css"
+        module: "text!title/template.html"
       }
     },
     insert: {
-      at: "dom.first!body"
+      first: 'top'
+    }
+  },
+  selector: {
+    render: {
+      template: {
+        module: "text!selector/template.html"
+      }
+    },
+    insert: {
+      last: 'top'
+    }
+  },
+  chart: {
+    render: {
+      template: {
+        module: "text!chart/template.html"
+      },
+      replace: {
+        module: "i18n!chart/strings"
+      }
+    },
+    insert: {
+      first: 'centre'
+    }
+  },
+  map: {
+    render: {
+      template: {
+        module: "text!map/template.html"
+      }
+    },
+    insert: {
+      last: 'centre'
     }
   },
   plugins: [
